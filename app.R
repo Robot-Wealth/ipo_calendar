@@ -66,8 +66,8 @@ server <- function(input, output) {
   output$calendar <- renderUI({
     selected_date <- input$date
     
-    from <- as.Date(selected_date) - 15
-    to <- as.Date(selected_date) + 15
+    from <- as.Date(selected_date) - 25
+    to <- as.Date(selected_date) + 5
     
     ipo_data <- fetch_ipo_data(from, to)
     
